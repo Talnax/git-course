@@ -1,6 +1,7 @@
 #license
 
-1. Init
+1. -------------------------------------------------------- Init
+$ git int
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com"
 $ git config --list
@@ -8,7 +9,7 @@ $ git config --list
 http://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
 The first place Git looks for these values is in an: /etc/gitconfig
 
-2. Ignore
+2. -------------------------------------------------------- Ignore
 In root working project folder we need to create '.gitignore' file:
 
 --------------------- .gitignore file start 
@@ -27,7 +28,7 @@ docs/*.txt
 rostislavshevtsov$ git status --untracked-files=all
 git status
 
-3. First add files ( first commit )
+3. -------------------------------------------------------- First add files ( first commit )
 $ git add .		// add files and make indexing
 
 - remove file from adding files:
@@ -36,20 +37,22 @@ $ git rm --cached "license.txt"
 - commit all files and set message( comment )
 $ git commit -a -m "first commit"
 
-4. Commit, indexing, adding
+4. -------------------------------------------------------- Commit, indexing, adding
 
 - files wich we change before commit we have to make indexing !!!
 @ git add "*.*" // make indexing to all changing files
 - if we want to comeback to previous version of file we do that:
 $ git checkout -- license.txt
 
-5. git help
+5. --------------------------------------------------------  git help
 $ git help log // log this is command that we interesting to get help
 
 
-6. Log files, if log so big just click of 'Q'  and git exit from log
+6. -------------------------------------------------------- Log files
 
 $ git log
+
+// if log so big just click of 'Q'  and git exit from log
 
 $ git log --pretty=format:"%h - %an, %ar : %s"
 fe2ca2b - talnax, 22 minutes ago : add changed license.txt
@@ -148,7 +151,7 @@ $git log -- filename
 $git log -p license.txt // show log of particular file
 
 
-7. Change editor for comments of commit
+7. -------------------------------------------------------- Change editor for comments of commit
 $ git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 
 $git config --global core.editor /usr/bin/vim
