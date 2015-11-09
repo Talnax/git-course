@@ -28,7 +28,7 @@ rostislavshevtsov$ git status --untracked-files=all
 git status
 
 3. First add files ( first commit )
-$ git add .
+$ git add .		// add files and make indexing
 
 - remove file from adding files:
 $ git rm --cached "license.txt"
@@ -153,7 +153,23 @@ $ git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.e
 
 $git config --global core.editor /usr/bin/vim
 
+If we use just 'Vim':
+$ git add "*.txt"
+$ git commit // without -m "comment"
+after open 'Vim':
+a. make comments
+b. click "ESC"
+c. click ":"
+d. click "x" for save and exit
 
+8,9. New branch
+git checkout -b new_payment // new_payment is name of new branch
+//or
+git branch new_ui			// create new branch 'new_ui'
+
+git branch                  // what branches we have 
+git branch -v 				// more detail info about branches
+git checkout new_ui			// switch to new_ui branch
 
 
 
