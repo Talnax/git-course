@@ -39,3 +39,6 @@ $ git commit -a -m "first commit"
 4. Commit, indexing, adding
 
 - files wich we change before commit we have to make indexing !!!
+@ git add "*.*" // make indexing to all changing files
+- if we want to comeback to previous version of file we do that:
+$ git checkout -- license.txt
