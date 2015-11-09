@@ -148,6 +148,16 @@ $git log -- filename
 $git log -p license.txt // show log of particular file
 
 
+7. Change editor for comments of commit
+$ git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+
+$git config --global core.editor /usr/bin/vim
+
+
+
+
+
+
 
 
 
