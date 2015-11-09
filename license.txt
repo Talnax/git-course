@@ -175,6 +175,19 @@ git branch -v 				// more detail info about branches
 git checkout new_ui			// switch to new_ui branch
 
 
+10. -------------------------------------------------------- Merging branches
+- git checkout new_payment
+- git config --global merge.tool kdiff3
+- git config --global mergetool.kdiff3.path /Applications/kdiff3.app/Contents/MacOS/kdiff3
+- git merge master // now we in branch 'new_payment' we take branch 'master' and inject to 'new_payment'
+// if we have conflicts
+- git mergetool
+// edit conflicts
+- git commit -m "merge 'master' with 'new_payment' branch, mean we inject 'master' to 'new_payment'"
+- git status 
+- git branch -v // check if all OK
+
+
 
 
 
