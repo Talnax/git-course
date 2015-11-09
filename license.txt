@@ -153,6 +153,8 @@ $ git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.e
 
 $git config --global core.editor /usr/bin/vim
 
+we checkout to the 'master branch'
+
 
 
 
