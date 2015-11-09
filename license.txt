@@ -187,6 +187,31 @@ git checkout new_ui			// switch to new_ui branch
 - git status 
 - git branch -v // check if all OK
 
+11. -------------------------------------------------------- GitHub
+- create account
+- Name: talnax
+- Repository: git-course
+- Public
+- path: https://github.com/Talnax/git-course.git
+- add git-hub server : git remote add origin https://github.com/Talnax/git-course.git
+- git push -u origin master	 // push to 'origin' branch to 'master'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
