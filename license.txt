@@ -42,3 +42,127 @@ $ git commit -a -m "first commit"
 @ git add "*.*" // make indexing to all changing files
 - if we want to comeback to previous version of file we do that:
 $ git checkout -- license.txt
+
+5. git help
+$ git help log // log this is command that we interesting to get help
+
+
+6. Log files, if log so big just click of 'Q'  and git exit from log
+
+$ git log
+
+$ git log --pretty=format:"%h - %an, %ar : %s"
+fe2ca2b - talnax, 22 minutes ago : add changed license.txt
+14d57d5 - talnax, 29 minutes ago : commit for *.js and lincense.txt
+68cd64b - talnax, 37 minutes ago : add license.txt
+25fb7f0 - talnax, 52 minutes ago : first commit
+
+$ git log --since=2.weeks
+commit fe2ca2b48bcd9f60e765310200147684824c184e
+Author: talnax <rostresh@gmail.com>
+Date:   Sun Nov 8 16:28:00 2015 -0800
+
+    add changed license.txt
+
+commit 14d57d55da8523195a8da6b843ed16d4faba677b
+Author: talnax <rostresh@gmail.com>
+Date:   Sun Nov 8 16:21:27 2015 -0800
+
+    commit for *.js and lincense.txt
+
+commit 68cd64b57f0a86abfc522483ffaf96c818918039
+Author: talnax <rostresh@gmail.com>
+Date:   Sun Nov 8 16:12:53 2015 -0800
+
+    add license.txt
+
+commit 25fb7f086da8219a257fdf1dacc6b3f3ad650ee3
+Author: talnax <rostresh@gmail.com>
+Date:   Sun Nov 8 15:57:46 2015 -0800
+
+    first commit
+
+$ git log --pretty=format:"%h - %an, %ar : %s" --since=2.weeks
+fe2ca2b - talnax, 25 minutes ago : add changed license.txt
+14d57d5 - talnax, 32 minutes ago : commit for *.js and lincense.txt
+68cd64b - talnax, 40 minutes ago : add license.txt
+25fb7f0 - talnax, 55 minutes ago : first commit
+
+
+$git log -p -2
+commit fe2ca2b48bcd9f60e765310200147684824c184e
+Author: talnax <rostresh@gmail.com>
+Date:   Sun Nov 8 16:28:00 2015 -0800
+
+    add changed license.txt
+
+diff --git a/license.txt b/license.txt
+index 12e19e0..8c43996 100644
+--- a/license.txt
++++ b/license.txt
+@@ -39,3 +39,6 @@ $ git commit -a -m "first commit"
+ 4. Commit, indexing, adding
+ 
+ - files wich we change before commit we have to make indexing !!!
++@ git add "*.*" // make indexing to all changing files
++- if we want to comeback to previous version of file we do that:
++$ git checkout -- license.txt
+
+commit 14d57d55da8523195a8da6b843ed16d4faba677b
+Author: talnax <rostresh@gmail.com>
+Date:   Sun Nov 8 16:21:27 2015 -0800
+
+    commit for *.js and lincense.txt
+
+diff --git a/htdocs/hello_git.js b/htdocs/hello_git.js
+index a74d21f..61e4f63 100644
+--- a/htdocs/hello_git.js
++++ b/htdocs/hello_git.js
+@@ -1 +1,2 @@
+-console.log("Hello Git");
+\ No newline at end of file
++console.log("Hello Git");
++console.log("Hello Git again");
+\ No newline at end of file
+diff --git a/license.txt b/license.txt
+index effe22c..12e19e0 100644
+--- a/license.txt
++++ b/license.txt
+@@ -29,3 +29,13 @@ git status
+ 
+ 3. First add files ( first commit )
+ $ git add .
++
++- remove file from adding files:
++$ git rm --cached "license.txt"
++
++- commit all files and set message( comment )
++$ git commit -a -m "first commit"
++
++4. Commit, indexing, adding
++
++- files wich we change before commit we have to make indexing !!!
+
+
+$git log -- filename
+$git log -p license.txt // show log of particular file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
