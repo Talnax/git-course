@@ -1,0 +1,31 @@
+#license
+
+1. Init
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com"
+$ git config --list
+
+http://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
+The first place Git looks for these values is in an: /etc/gitconfig
+
+2. Ignore
+In root working project folder we need to create '.gitignore' file:
+
+--------------------- .gitignore file start 
+# folder logs
+logs/
+
+# *.txt files
+docs/*.txt
+# folder logs
+logs/
+
+# *.txt files
+docs/*.txt
+--------------------- .gitignore file finish 
+
+rostislavshevtsov$ git status --untracked-files=all
+git status
+
+3. First add files ( first commit )
+$ git add .
