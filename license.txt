@@ -29,3 +29,13 @@ git status
 
 3. First add files ( first commit )
 $ git add .
+
+- remove file from adding files:
+$ git rm --cached "license.txt"
+
+- commit all files and set message( comment )
+$ git commit -a -m "first commit"
+
+4. Commit, indexing, adding
+
+- files wich we change before commit we have to make indexing !!!
