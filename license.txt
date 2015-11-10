@@ -1,4 +1,4 @@
-#license
+#license // http://seelentera.com/course/view/436
 
 1. -------------------------------------------------------- Init
 $ git int
@@ -195,6 +195,10 @@ git checkout new_ui			// switch to new_ui branch
 - path: https://github.com/Talnax/git-course.git
 - add git-hub server : git remote add origin https://github.com/Talnax/git-course.git
 - git push -u origin master	 // push to 'origin' branch to 'master'
+
+12. -------------------------------------------------------- Work with different branches, Cloning
+- git config --global push.default matching // push all branches
+- we create new folder 'git-project-2'
 
 
 
