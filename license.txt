@@ -201,6 +201,8 @@ git checkout new_ui			// switch to new_ui branch
 - we create new folder 'git-project-2'
 - $ git clone https://github.com/Talnax/git-course.git // make clone to new folder
 - $ git branch -v
+- $ git fetch // get information about last changes from origin( github ) and save it to hide folder: .git
+- $ get pull  // get all last changes phisicaly
 
 
 
