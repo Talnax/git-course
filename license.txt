@@ -197,8 +197,11 @@ git checkout new_ui			// switch to new_ui branch
 - git push -u origin master	 // push to 'origin' branch to 'master'
 
 12. -------------------------------------------------------- Work with different branches, Cloning
-- git config --global push.default matching // push all branches
+- $ git config --global push.default matching // push all branches
 - we create new folder 'git-project-2'
+- $ git clone https://github.com/Talnax/git-course.git // make clone to new folder
+- $ git branch -v
+
 
 
 

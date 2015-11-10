@@ -1,0 +1,1 @@
+console.log("setting.js file for new folder 'new-git-project-2'");
